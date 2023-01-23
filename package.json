@@ -34,22 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Meelenych/meta_little_lemon.git"
-  },
-  "keywords": [
-    "little",
-    "lemon"
-  ],
-  "author": "Taras Demchenko",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Meelenych/meta_little_lemon/issues"
-  },
-  "homepage": "https://github.com/Meelenych/meta_little_lemon#readme"
+  }
 }
