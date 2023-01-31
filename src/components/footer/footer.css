@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navWrapper ul {
+  flex-direction: column;
+  align-items: start;
+}
+
+footer ul li:first-child {
+  display: block;
+}
+
+.navWrapper {
+}
+
+.contactsWrapper {
+}
+
+.socialsWrapper {
+}
