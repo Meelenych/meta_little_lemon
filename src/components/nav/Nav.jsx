@@ -1,16 +1,9 @@
-import logo from '../../images/Logo.svg';
 import './nav.css';
 
 export function Nav() {
 	return (
 		<>
 			<nav>
-				<a href=''>
-					<img
-						src={logo}
-						alt='Little Lemon logo'
-					/>
-				</a>
 				<ul className='navList'>
 					<li>
 						<a href=''>Home</a>
