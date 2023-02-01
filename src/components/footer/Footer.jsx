@@ -17,7 +17,6 @@ export function Footer() {
 					</div>
 					<div className='navWrapper'>
 						<h3>Doormat navigation</h3>
-
 						<Nav></Nav>
 					</div>
 					<div className='contactsWrapper'>
