@@ -8,12 +8,10 @@ export function Footer() {
 			<div className='container'>
 				<footer>
 					<div className='logoWrapper'>
-						<a href=''>
-							<img
-								src={logo}
-								alt='Little Lemon logo'
-							/>
-						</a>
+						<img
+							src={logo}
+							alt='Little Lemon logo'
+						/>
 					</div>
 					<div className='navWrapper'>
 						<h3>Doormat navigation</h3>
@@ -23,20 +21,16 @@ export function Footer() {
 						<h3>Contact information</h3>
 						<ul>
 							<li>
-								<p>
-									Address: <address>Park Avenue 153, Chicago, 10005, USA</address>
-								</p>
+								<span>Address: </span>
+								<address>Park Avenue 153, Chicago, 10005, USA</address>
 							</li>
 							<li>
-								<p>
-									Tel.: <a href='tel:+16238848484'>+16238848484</a>
-								</p>
+								<span>Phone: </span>
+								<a href='tel:+16238848484'>+16238848484</a>
 							</li>
 							<li>
-								<p>
-									E-mail:{' '}
-									<a href='mailto:little_lemon@gmail.com'>little_lemon@gmail.com</a>
-								</p>
+								<span>E-mail: </span>
+								<a href='mailto:little_lemon@gmail.com'>little_lemon@gmail.com</a>
 							</li>
 						</ul>
 					</div>
