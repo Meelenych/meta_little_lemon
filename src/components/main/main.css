@@ -39,7 +39,7 @@
 
 .button {
   max-width: 250px;
-  margin-top: 20px;
+
   padding: 5px 30px;
   border-width: 0;
   box-shadow: none;
@@ -66,6 +66,7 @@
 
 .heroButton {
   height: 45px;
+  margin-top: 20px;
 }
 
 .heroRight {
@@ -118,12 +119,14 @@
 /* Specials section  */
 
 .specials {
-  margin-top: 120px;
+  margin-top: 60px;
+  padding: 60px 0;
 }
 
 .specialsHeadingWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -160,15 +163,19 @@
   .specialsHeading {
     font-size: 48px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .specialsCardsWrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
 
+@media screen and (max-width: 576px) {
   .button {
     max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -246,3 +253,159 @@
 }
 
 /* Testimonials section  */
+
+.testimonials {
+  background-color: rgba(73, 94, 87, 0.5);
+  padding: 60px 0;
+}
+
+.testimonialsHeading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 64px;
+  color: #000;
+  line-height: 0.7;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonialsWrapper {
+}
+
+.testimonialsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.testimonialsItem {
+  border-radius: 16px;
+  color: #edefee;
+  background-color: #333333;
+  -webkit-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  -moz-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+}
+
+.testimonialsCardWrapper {
+  padding: 20px;
+}
+
+.testimonialsRating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.testimonialsRating img {
+  height: 30px;
+}
+
+.testimonialsProfile {
+  display: flex;
+  align-items: center;
+}
+
+.testimonialsProfileImage {
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.testimonialsProfileName {
+  font-size: 18px;
+}
+
+.testimonialsText {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1400px) {
+  .testimonialsList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .testimonialsList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimonialsList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonialsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About section  */
+
+.about {
+  padding: 60px 0;
+  height: 550px;
+}
+
+.aboutWrapper {
+  display: flex;
+}
+
+.aboutLeft {
+  width: 50%;
+}
+
+.aboutHeading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 64px;
+  color: rgba(73, 94, 87, 1);
+  line-height: 0.7;
+}
+
+.aboutSubHeading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 36px;
+  color: rgba(244, 206, 20, 1);
+  line-height: 0.7;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.aboutRight {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutImage {
+  height: 245px;
+  border-radius: 16px;
+  -webkit-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  -moz-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+}
+
+.aboutImageTop {
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  z-index: 2;
+}
+
+.aboutImageBottom {
+  z-index: 1;
+}
