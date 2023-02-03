@@ -76,6 +76,7 @@ a:hover::after {
 img,
 picture {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -91,41 +92,41 @@ select {
 
 .container {
   margin: 0 auto;
-  padding: 20px 60px;
+  padding: 0 60px;
   max-width: 1800px;
 }
 
 @media screen and (max-width: 1600px) {
   .container {
-    padding: 15px 50px;
+    padding: 0 50px;
     max-width: 1600px;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .container {
-    padding: 10px 40px;
+    padding: 0 40px;
     max-width: 1400px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 10px 30px;
+    padding: 0 30px;
     max-width: 1200px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 10px 20px;
+    padding: 0 20px;
     max-width: 768px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .container {
-    padding: 5px 20px;
+    padding: 0 20px;
     max-width: 576px;
   }
 }

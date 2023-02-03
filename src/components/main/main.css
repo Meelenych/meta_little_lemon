@@ -351,15 +351,17 @@
 
 .about {
   padding: 60px 0;
-  height: 550px;
+  height: fit-content;
+  min-height: 30em;
 }
 
 .aboutWrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .aboutLeft {
-  width: 50%;
+  width: 45%;
 }
 
 .aboutHeading {
@@ -385,14 +387,14 @@
 }
 
 .aboutRight {
-  width: 50%;
+  width: 45%;
   position: relative;
   display: flex;
   justify-content: flex-end;
 }
 
 .aboutImage {
-  height: 245px;
+  max-height: 245px;
   border-radius: 16px;
   -webkit-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
   -moz-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
@@ -408,4 +410,54 @@
 
 .aboutImageBottom {
   z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutImageTop {
+    display: none;
+  }
+
+  .aboutRight {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    min-height: 52em;
+  }
+
+  .aboutWrapper {
+    flex-direction: column;
+  }
+
+  .aboutLeft {
+    width: 100%;
+  }
+
+  .aboutRight {
+    width: 100%;
+  }
+
+  .aboutImageTop {
+    display: block;
+  }
+
+  .aboutImage {
+    max-height: 190px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    min-height: 30em;
+  }
+
+  .aboutRight {
+    justify-content: center;
+  }
+
+  .aboutImageTop {
+    display: none;
+  }
 }

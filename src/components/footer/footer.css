@@ -1,12 +1,13 @@
 footer {
   background-color: rgba(73, 94, 87, 1);
-  color: #333333;
+  color: #edefee;
 }
 
 .footerWrapper {
   display: grid;
   grid-template-columns: 10% 20% 30% auto;
   gap: 30px;
+  padding: 20px 0;
 }
 
 h3 {
@@ -28,7 +29,7 @@ h3 {
 .navWrapper ul li a,
 .contactsWrapper ul a,
 .socialsWrapper ul li a {
-  color: #333333;
+  color: #edefee;
 }
 
 .logoWrapper img {
