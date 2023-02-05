@@ -1,7 +1,13 @@
+import { Header } from '../components/header/Header';
+import { Main } from '../components/main/Main';
+import { Footer } from '../components/footer/Footer';
+
 export function HomePage() {
 	return (
 		<>
-			<h1>Home page</h1>
+			<Header></Header>
+			<Main></Main>
+			<Footer></Footer>
 		</>
 	);
 }

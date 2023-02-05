@@ -1,0 +1,114 @@
+/* About section  */
+
+.about {
+  padding: 60px 0;
+  height: fit-content;
+  min-height: 30em;
+}
+
+.aboutWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutLeft {
+  width: 45%;
+}
+
+.aboutHeading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 64px;
+  color: rgba(73, 94, 87, 1);
+  line-height: 0.7;
+}
+
+.aboutSubHeading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 36px;
+  color: rgba(244, 206, 20, 1);
+  line-height: 0.7;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.aboutRight {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutImage {
+  max-height: 245px;
+  border-radius: 16px;
+  -webkit-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  -moz-box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+  box-shadow: 19px 20px 26px -19px rgba(73, 94, 87, 1);
+}
+
+.aboutImageTop {
+  position: absolute;
+  top: 130px;
+  right: 250px;
+  z-index: 2;
+}
+
+.aboutImageBottom {
+  z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutImageTop {
+    display: none;
+  }
+
+  .aboutRight {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    min-height: 52em;
+  }
+
+  .aboutWrapper {
+    flex-direction: column;
+  }
+
+  .aboutLeft {
+    width: 100%;
+  }
+
+  .aboutRight {
+    width: 100%;
+  }
+
+  .aboutImageTop {
+    display: block;
+  }
+
+  .aboutImage {
+    max-height: 190px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    min-height: 30em;
+  }
+
+  .aboutRight {
+    justify-content: center;
+  }
+
+  .aboutImageTop {
+    display: none;
+  }
+}

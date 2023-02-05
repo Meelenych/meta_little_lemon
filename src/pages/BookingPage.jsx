@@ -1,7 +1,13 @@
+import { Header } from '../components/header/Header';
+
+import { Footer } from '../components/footer/Footer';
+
 export function BookingPage() {
 	return (
 		<>
-			<h1>Booking page</h1>
+			<Header></Header>
+
+			<Footer></Footer>
 		</>
 	);
 }

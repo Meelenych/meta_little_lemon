@@ -1,15 +1,28 @@
-import { Header } from './components/header/Header';
-import { Main } from './components/main/Main';
-import { Footer } from './components/footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import React, { Suspense } from 'react';
 
+import { Loader } from './components/loader/loader';
+import { HomePage } from './pages/HomePage';
+import { BookingPage } from './pages/BookingPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 import './App.css';
 
 function App() {
 	return (
 		<>
-			<Header></Header>
-			<Main></Main>
-			<Footer></Footer>
+			<Suspense fallback={<Loader />}>
+				<Routes>
+					<Route
+						path='/'
+						element={<HomePage />}></Route>
+					<Route
+						path='/booking'
+						element={<BookingPage />}></Route>
+					<Route
+						path='*'
+						element={<NotFoundPage />}></Route>
+				</Routes>
+			</Suspense>
 		</>
 	);
 }

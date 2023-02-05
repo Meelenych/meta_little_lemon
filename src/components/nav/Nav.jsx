@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './nav.css';
 
 export function Nav() {
@@ -6,7 +8,7 @@ export function Nav() {
 			<nav>
 				<ul className='navList'>
 					<li>
-						<a href=''>Home</a>
+						<NavLink to='/'>Home</NavLink>
 					</li>
 					<li>
 						<a href=''>About</a>
@@ -15,7 +17,7 @@ export function Nav() {
 						<a href=''>Menu</a>
 					</li>
 					<li>
-						<a href=''>Reservations</a>
+						<NavLink to='/booking'>Reservations</NavLink>
 					</li>
 					<li>
 						<a href=''>Order online</a>
