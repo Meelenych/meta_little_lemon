@@ -85,7 +85,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: "Karla", sans-serif;
 }
 
 /* =============================================================================== */

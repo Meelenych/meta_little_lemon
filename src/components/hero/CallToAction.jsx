@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './CallToActions.css';
 
 export function CalllToAction() {
@@ -16,7 +18,7 @@ export function CalllToAction() {
 							<button
 								type='button'
 								className='button heroButton'>
-								Reserve a table
+								<NavLink to='/booking'>Reserve a table</NavLink>
 							</button>
 						</div>
 						<div className='heroRight'>
