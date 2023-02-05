@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export function BookingForm() {
 	const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+	const reservationData = { date: '', time: '', guests: '', occasion: '' };
 
 	const [date, setDate] = useState('');
 	const [time, setTime] = useState('');
@@ -10,10 +11,13 @@ export function BookingForm() {
 
 	const handleSubmit = event => {
 		event.preventDefault();
-		console.log(`Date: ${date}`);
-		console.log(`Time: ${time}`);
-		console.log(`Guests: ${guests}`);
-		console.log(`Occasion: ${occasion}`);
+
+		reservationData.date = date;
+		reservationData.time = time;
+		reservationData.guests = guests;
+		reservationData.occasion = occasion;
+
+		console.log('reservationData', reservationData);
 	};
 
 	return (
