@@ -1,3 +1,9 @@
+import { Route, Routes } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { Loader } from '../../components/loader/loader';
+import { HomePage } from '../../pages/HomePage';
+import { BookingPage } from '../../pages/BookingPage';
+
 import './main.css';
 import deliveryIcon from '../../images/bike-delivery-icon.svg';
 import starIcon from '../../images/8fab66317d6c35dc211a165dbc3735e15466ae68.png';
@@ -11,6 +17,17 @@ import owners2 from '../../images/Mario and Adrian b.jpg';
 export function Main() {
 	return (
 		<>
+			<Suspense fallback={<Loader />}>
+				<Routes>
+					<Route
+						path='/'
+						element={<HomePage />}></Route>
+					<Route
+						path='/booking'
+						element={<BookingPage />}></Route>
+				</Routes>
+			</Suspense>
+
 			<main>
 				<section className='hero'>
 					<div className='container'>

@@ -7,10 +7,10 @@ export function Header() {
 		<div className='container'>
 			<header>
 				<a
-					class='logoLink'
+					className='logoLink'
 					href=''>
 					<img
-						class='logoImg'
+						className='logoImg'
 						src={logo}
 						alt='Little Lemon logo'
 					/>
