@@ -14,10 +14,23 @@ export function BookingPage() {
 		'22:00',
 	]);
 
+	const updateTimes = reservationData => {
+		console.log('times updated');
+		console.log('reservationData', reservationData);
+		return availableTimes;
+	};
+
+	const initializeTimes = () => {
+		console.log('times initialized');
+		return availableTimes;
+	};
+
 	return (
 		<>
 			<Header></Header>
-			<BookingForm availableTimes={availableTimes}></BookingForm>
+			<BookingForm
+				availableTimes={availableTimes}
+				updateTimes={updateTimes}></BookingForm>
 			<Footer></Footer>
 		</>
 	);

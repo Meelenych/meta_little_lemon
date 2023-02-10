@@ -30,7 +30,7 @@ export function BookingForm(props) {
 		reservationData.comments = comments;
 		reservationData.occasion = occasion;
 
-		console.log('reservationData', reservationData);
+		props.updateTimes(reservationData);
 	};
 
 	return (
@@ -82,7 +82,6 @@ export function BookingForm(props) {
 								/>
 							</div>
 							<div className='occasionWrapper'>
-								{' '}
 								<label htmlFor='occasion'>Select occasion</label>
 								<select
 									id='occasion'
