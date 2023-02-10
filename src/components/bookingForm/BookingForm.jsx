@@ -30,7 +30,8 @@ export function BookingForm(props) {
 		reservationData.comments = comments;
 		reservationData.occasion = occasion;
 
-		props.updateTimes(reservationData);
+		props.updateResData(reservationData);
+		props.dispatch({ type: 'update_times' });
 	};
 
 	return (

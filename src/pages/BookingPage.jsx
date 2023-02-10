@@ -1,36 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 
 import { Header } from '../components/header/Header';
 import { BookingForm } from '../components/bookingForm/BookingForm';
 import { Footer } from '../components/footer/Footer';
 
 export function BookingPage() {
-	const [availableTimes, setAvailableTimes] = useState([
-		'17:00',
-		'18:00',
-		'19:00',
-		'20:00',
-		'21:00',
-		'22:00',
-	]);
+	const [bookingData, setBookingData] = useState({});
 
-	const updateTimes = reservationData => {
-		console.log('times updated');
-		console.log('reservationData', reservationData);
-		return availableTimes;
+	const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+
+	const updateResData = reservationData => {
+		console.log('res', reservationData);
+		setBookingData({ ...reservationData });
 	};
 
-	const initializeTimes = () => {
-		console.log('times initialized');
-		return availableTimes;
+	// const initializeTimes = () => {
+	// 	console.log('times initialized');
+	// 	return availableTimes;
+	// };
+
+	const timesReducer = (state = availableTimes, action) => {
+		if (action.type === 'update_times') {
+			const newState = [...state];
+			newState.splice(availableTimes.indexOf(bookingData.time), 1);
+
+			return newState;
+		}
+		throw Error('Unknown action.');
 	};
+
+	const [updatedTimes, dispatch] = useReducer(timesReducer, availableTimes);
 
 	return (
 		<>
 			<Header></Header>
 			<BookingForm
-				availableTimes={availableTimes}
-				updateTimes={updateTimes}></BookingForm>
+				availableTimes={updatedTimes}
+				updateResData={updateResData}
+				dispatch={dispatch}></BookingForm>
 			<Footer></Footer>
 		</>
 	);
