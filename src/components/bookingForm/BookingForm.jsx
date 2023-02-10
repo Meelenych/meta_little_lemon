@@ -57,15 +57,18 @@ export function BookingForm(props) {
 								<label htmlFor='res-time'>Choose time</label>
 								<select
 									id='res-time '
-									value={time}
 									onChange={e => setTime(e.target.value)}>
-									{props.availableTimes.map(time => (
-										<option
-											key={time}
-											value={time}>
-											{time}
-										</option>
-									))}
+									{props.availableTimes.length !== 0 ? (
+										props.availableTimes.map(time => (
+											<option
+												key={time}
+												value={time}>
+												{time}
+											</option>
+										))
+									) : (
+										<option>No time available</option>
+									)}
 								</select>
 							</div>
 						</div>

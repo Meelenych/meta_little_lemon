@@ -22,7 +22,7 @@ export function BookingPage() {
 	const timesReducer = (state = availableTimes, action) => {
 		if (action.type === 'update_times') {
 			const newState = [...state];
-			newState.splice(availableTimes.indexOf(bookingData.time), 1);
+			newState.splice(state.indexOf(bookingData.time), 1);
 
 			return newState;
 		}
