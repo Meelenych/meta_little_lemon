@@ -30,7 +30,7 @@ export function BookingPage() {
 		throw Error('Unknown action.');
 	};
 
-	const [updatedTimes, dispatch] = useReducer(timesReducer, availableTimes);
+	const [updatedTimes, dispatch] = useReducer(timesReducer, initializeTimes());
 
 	return (
 		<>
