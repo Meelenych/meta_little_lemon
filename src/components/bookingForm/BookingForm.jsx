@@ -132,6 +132,7 @@ export function BookingForm(props) {
 						/>
 						<div className='buttonsWrapper'>
 							<button
+								aria-label='submit button'
 								type='button'
 								className='buttonCancel'>
 								<NavLink to='/'>Cancel</NavLink>
