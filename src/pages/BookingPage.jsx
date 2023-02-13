@@ -14,16 +14,17 @@ export function BookingPage() {
 		setBookingData({ ...reservationData });
 	};
 
-	// const initializeTimes = () => {
-	// 	console.log('times initialized');
-	// 	return availableTimes;
-	// };
+	const initializeTimes = () => {
+		console.log('times initialized');
+		return availableTimes;
+	};
 
-	const timesReducer = (state = availableTimes, action) => {
+	const updateTimes = times => {};
+
+	const timesReducer = (state = initializeTimes, action) => {
 		if (action.type === 'update_times') {
 			const newState = [...state];
 			newState.splice(state.indexOf(bookingData.time), 1);
-
 			return newState;
 		}
 		throw Error('Unknown action.');
