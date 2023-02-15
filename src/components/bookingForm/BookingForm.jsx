@@ -38,7 +38,7 @@ export function BookingForm(props) {
 		<>
 			<section className='resFormWrapper'>
 				<div className='container'>
-					<h1 className='resFormHeading'>Table reservation</h1>
+					<h1 className='resFormHeading'>Book Now</h1>
 
 					<form
 						onSubmit={handleSubmit}
