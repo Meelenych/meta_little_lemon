@@ -58,8 +58,8 @@ export function BookingForm(props) {
 								<select
 									id='res-time '
 									onChange={e => setTime(e.target.value)}>
-									{props.availableTimes.length !== 0 ? (
-										props.availableTimes.map(time => (
+									{props.availableTimes?.length !== 0 ? (
+										props.availableTimes?.map(time => (
 											<option
 												key={time}
 												value={time}>

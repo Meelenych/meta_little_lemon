@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import BookingForm from './BookingForm';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { BookingForm } from './BookingForm';
 
 test('Renders the BookingForm heading', () => {
-	render(<BookingForm />);
+	render(
+		<Router>
+			<BookingForm />
+		</Router>,
+	);
 	const headingElement = screen.getByText('Book Now');
 	expect(headingElement).toBeInTheDocument();
 });
